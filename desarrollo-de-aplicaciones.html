@@ -1,463 +1,278 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ===== Primary Meta Tags ===== -->
-  <title>Desarrollo de Aplicaciones Móviles iOS y Android en Uruguay — urbanbit</title>
-  <meta name="title" content="Desarrollo de Aplicaciones Móviles iOS y Android en Uruguay — urbanbit" />
-  <meta name="description" content="Desarrollamos aplicaciones móviles híbridas para iOS y Android con React Native e Ionic en Uruguay. Juegos 2D/3D con Unity. Gestión integral desde wireframes hasta publicación en los stores." />
-  <meta name="keywords" content="desarrollo aplicaciones móviles Uruguay, apps iOS Android Uruguay, React Native Uruguay, Ionic Uruguay, desarrollo apps Uruguay, aplicaciones empresariales Uruguay, juegos Unity Uruguay, apps híbridas Uruguay" />
-  <meta name="author" content="urbanbit" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="language" content="Spanish" />
-  <meta name="theme-color" content="#00AEEF" />
-  <link rel="canonical" href="https://www.urbanbit.net/desarrollo-de-aplicaciones" />
-
-  <!-- ===== Open Graph / Facebook ===== -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.urbanbit.net/desarrollo-de-aplicaciones" />
-  <meta property="og:site_name" content="urbanbit" />
-  <meta property="og:locale" content="es_UY" />
-  <meta property="og:title" content="Desarrollo de Aplicaciones Móviles iOS y Android en Uruguay — urbanbit" />
-  <meta property="og:description" content="Apps híbridas para iOS y Android con React Native e Ionic. Juegos con Unity. Gestión completa desde wireframes hasta publicación en los stores." />
-  <meta property="og:image" content="https://www.urbanbit.net/og-image.svg" />
-  <meta property="og:image:alt" content="Desarrollo de Aplicaciones Móviles Uruguay — urbanbit" />
-
-  <!-- ===== Twitter Card ===== -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@urbanbitnet" />
-  <meta name="twitter:title" content="Desarrollo de Apps iOS y Android en Uruguay — urbanbit" />
-  <meta name="twitter:description" content="Apps híbridas con React Native e Ionic para iOS y Android. Juegos con Unity. Desde wireframes hasta los stores." />
-  <meta name="twitter:image" content="https://www.urbanbit.net/og-image.svg" />
-
-  <!-- ===== Geo Tags ===== -->
-  <meta name="geo.region" content="UY" />
-  <meta name="geo.placename" content="Uruguay" />
-
-  <!-- ===== Favicon ===== -->
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="apple-touch-icon" href="logo.png" />
-
-  <!-- ===== Preconnect / DNS Prefetch ===== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-  <link rel="dns-prefetch" href="//unpkg.com" />
-
-  <!-- ===== Fonts & Styles ===== -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- ===== JSON-LD Structured Data ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.urbanbit.net/" },
-          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://www.urbanbit.net/#servicios" },
-          { "@type": "ListItem", "position": 3, "name": "Desarrollo de Aplicaciones", "item": "https://www.urbanbit.net/desarrollo-de-aplicaciones" }
-        ]
-      },
-      {
-        "@type": "Service",
-        "@id": "https://www.urbanbit.net/desarrollo-de-aplicaciones#service",
-        "name": "Desarrollo de Aplicaciones Móviles",
-        "alternateName": "Apps iOS y Android Uruguay",
-        "description": "Desarrollamos aplicaciones móviles híbridas para iOS y Android con React Native e Ionic. También creamos juegos 2D y 3D con Unity. Gestión integral desde wireframes hasta la publicación en Google Play y App Store.",
-        "url": "https://www.urbanbit.net/desarrollo-de-aplicaciones",
-        "provider": {
-          "@type": "Organization",
-          "name": "urbanbit",
-          "url": "https://www.urbanbit.net"
-        },
-        "areaServed": { "@type": "Country", "name": "Uruguay" },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "38",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "serviceType": "Mobile App Development",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Servicios de desarrollo de aplicaciones",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aplicaciones Móviles iOS y Android" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apps de Negocio y E-commerce" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Juegos y Apps Promocionales con Unity" } }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Las apps funcionan en iOS y Android al mismo tiempo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, desarrollamos aplicaciones híbridas con React Native e Ionic que funcionan perfectamente en ambas plataformas con un único código base, reduciendo costos y tiempos de desarrollo."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Publican la app en Google Play y App Store?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, nos encargamos de todo el proceso de publicación en Google Play y App Store, incluyendo la configuración de cuentas de desarrollador, capturas de pantalla y descripción optimizada."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #0D1117; }
+  @keyframes ub-gridmove { from { background-position: 0 0, 0 0; } to { background-position: 0 66px, 66px 0; } }
+  @keyframes ub-orb { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(5%,7%) scale(1.1); } }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="position:relative; background:#0D1117; color:#fff; font-family:'Space Grotesk',system-ui,sans-serif; overflow-x:hidden; -webkit-font-smoothing:antialiased;">
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" aria-label="Navegación principal">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="urbanbit — Agencia Web Uruguay" class="nav-logo-img" width="140" height="38">
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html#inicio">Inicio</a></li>
-        <li><a href="index.html#servicios">Servicios</a></li>
-        <li><a href="index.html#metodologia">Metodología</a></li>
-        <li><a href="index.html#tecnologias">Tecnologías</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
-      </ul>
-      <a href="index.html#contacto" class="btn btn-primary nav-cta">Contactanos</a>
-      <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div data-role="topbar" style="position:fixed; top:0; left:0; height:3px; width:100%; background:linear-gradient(90deg,#00AEEF,#33BEFF); transform:scaleX(0); transform-origin:left; z-index:120; box-shadow:0 0 12px rgba(0,174,239,.6);"></div>
+
+  <nav style="position:fixed; top:0; left:0; right:0; min-height:66px; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(16px,4vw,52px); z-index:110; background:rgba(13,17,23,.72); backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,.06);">
+    <a href="index.html" style="display:flex; align-items:center;"><img src="uploads/logo.png" alt="urbanbit" style="height:24px; width:auto; display:block;" /></a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,2.1vw,30px);">
+      <a href="index.html#inicio" data-navlink style="color:rgba(255,255,255,.72); text-decoration:none; font-size:14px;">Inicio</a>
+      <a href="index.html#servicios" data-navlink style="color:rgba(255,255,255,.72); text-decoration:none; font-size:14px;">Servicios</a>
+      <a href="index.html#metodologia" data-navlink style="color:rgba(255,255,255,.72); text-decoration:none; font-size:14px;">Metodología</a>
+      <a href="index.html#tecnologias" data-navlink style="color:rgba(255,255,255,.72); text-decoration:none; font-size:14px;">Tecnologías</a>
+      <a href="index.html#portfolio" data-navlink style="color:rgba(255,255,255,.72); text-decoration:none; font-size:14px;">Portfolio</a>
+      <a href="index.html#contacto" style="display:inline-flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px; background:#00AEEF; color:#04121a; text-decoration:none; font-size:14px; font-weight:600; box-shadow:0 8px 24px rgba(0,174,239,.25);" style-hover="background:#33BEFF;">Contactanos</a>
+      <button data-role="burger" aria-label="Menú" style="display:none; background:none; border:none; color:#fff; font-size:22px; cursor:pointer; padding:4px;"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
-
-  <div class="nav-mobile" id="nav-mobile">
-    <a href="index.html#inicio">Inicio</a>
-    <a href="index.html#servicios">Servicios</a>
-    <a href="index.html#metodologia">Metodología</a>
-    <a href="index.html#tecnologias">Tecnologías</a>
-    <a href="index.html#portfolio">Portfolio</a>
-    <a href="index.html#contacto">Contacto</a>
-    <a href="index.html#contacto" class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Contactanos</a>
+  <div data-role="mobilemenu" style="position:fixed; top:66px; left:0; right:0; z-index:105; background:rgba(13,17,23,.97); backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,.08); flex-direction:column; padding:14px 20px 22px; gap:4px; display:none;">
+    <a href="index.html#inicio" data-mlink style="color:#fff; text-decoration:none; font-size:16px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.06);">Inicio</a>
+    <a href="index.html#servicios" data-mlink style="color:#fff; text-decoration:none; font-size:16px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.06);">Servicios</a>
+    <a href="index.html#metodologia" data-mlink style="color:#fff; text-decoration:none; font-size:16px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.06);">Metodología</a>
+    <a href="index.html#tecnologias" data-mlink style="color:#fff; text-decoration:none; font-size:16px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.06);">Tecnologías</a>
+    <a href="index.html#portfolio" data-mlink style="color:#fff; text-decoration:none; font-size:16px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.06);">Portfolio</a>
+    <a href="index.html#contacto" data-mlink style="margin-top:12px; text-align:center; padding:13px; border-radius:999px; background:#00AEEF; color:#04121a; text-decoration:none; font-weight:600;">Contactanos</a>
   </div>
 
-  <main id="main-content">
+  <!-- PAGE HERO -->
+  <section data-screen-label="Hero" style="position:relative; padding:calc(66px + clamp(50px,10vh,110px)) clamp(18px,5vw,80px) clamp(60px,10vh,110px); overflow:hidden;">
+    <div style="position:absolute; top:-10%; right:-6%; width:min(60vw,560px); height:min(60vw,560px); border-radius:50%; background:radial-gradient(circle, rgba(0,174,239,.22), rgba(0,174,239,0) 62%); filter:blur(16px); animation:ub-orb 9s ease-in-out infinite; pointer-events:none;"></div>
+    <div style="position:absolute; left:0; right:0; bottom:0; height:40%; perspective:520px; perspective-origin:50% 100%; overflow:hidden; pointer-events:none; opacity:.5;">
+      <div style="position:absolute; left:-60%; right:-60%; top:-10%; bottom:0; background-image:linear-gradient(rgba(0,174,239,.5) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(0,174,239,.3) 1.5px, transparent 1.5px); background-size:66px 66px; animation:ub-gridmove 6s linear infinite; transform-origin:50% 100%; transform:rotateX(72deg); -webkit-mask-image:linear-gradient(to top, #000 10%, transparent 90%); mask-image:linear-gradient(to top, #000 10%, transparent 90%);"></div>
+    </div>
+    <div style="position:relative; max-width:900px; margin:0 auto; text-align:center;">
+      <div style="display:flex; align-items:center; justify-content:center; gap:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:rgba(255,255,255,.5); margin-bottom:20px;">
+        <a href="index.html" style="color:rgba(255,255,255,.5); text-decoration:none;">Inicio</a><i class="fas fa-chevron-right" style="font-size:9px;"></i>
+        <a href="index.html#servicios" style="color:rgba(255,255,255,.5); text-decoration:none;">Servicios</a><i class="fas fa-chevron-right" style="font-size:9px;"></i>
+        <span style="color:#33BEFF;">Desarrollo de Aplicaciones</span>
+      </div>
+      <div style="display:inline-block; padding:6px 14px; border-radius:999px; border:1px solid rgba(0,174,239,.35); background:rgba(0,174,239,.07); font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:#33BEFF; margin-bottom:22px;">APPS MÓVILES</div>
+      <h1 style="margin:0; font-size:clamp(2.3rem,6vw,4.6rem); line-height:1.02; font-weight:700; letter-spacing:-.03em;">Aplicaciones móviles que <span style="background:linear-gradient(120deg,#00AEEF,#33BEFF); -webkit-background-clip:text; background-clip:text; color:transparent;">hacen crecer</span> tu negocio</h1>
+      <p style="margin:24px auto 0; max-width:640px; font-size:clamp(1rem,1.6vw,1.18rem); line-height:1.55; color:rgba(255,255,255,.62);">Apps híbridas para iOS y Android con React Native e Ionic, y juegos 2D/3D con Unity. Gestión integral desde el wireframe hasta la publicación en los stores.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:32px;">
+        <a href="index.html#contacto" style="display:inline-flex; align-items:center; gap:9px; padding:14px 28px; border-radius:999px; background:#00AEEF; color:#04121a; text-decoration:none; font-size:1rem; font-weight:600; box-shadow:0 10px 34px rgba(0,174,239,.3);" style-hover="background:#33BEFF;"><i class="fas fa-paper-plane"></i> Solicitar presupuesto</a>
+        <a href="#sub-servicios" style="display:inline-flex; align-items:center; gap:9px; padding:14px 28px; border-radius:999px; background:transparent; color:#fff; text-decoration:none; font-size:1rem; font-weight:500; border:1px solid rgba(255,255,255,.22);" style-hover="border-color:rgba(0,174,239,.6);"><i class="fas fa-mobile-screen"></i> Ver servicios</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
-    <div class="page-hero-grid"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="container">
-      <div class="page-hero-content">
-        <div class="breadcrumb">
-          <a href="index.html">Inicio</a>
-          <i class="fas fa-chevron-right"></i>
-          <a href="index.html#servicios">Servicios</a>
-          <i class="fas fa-chevron-right"></i>
-          <span style="color:var(--primary)">Desarrollo de Aplicaciones</span>
+  <!-- INTRO -->
+  <section style="position:relative; z-index:2; background:#12181F; padding:clamp(70px,11vh,120px) clamp(18px,5vw,80px); border-top:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1150px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:clamp(32px,5vw,64px); align-items:center;">
+      <div data-reveal style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; color:#33BEFF;">// ¿POR QUÉ UNA APP?</div>
+        <h2 style="margin:14px 0 18px; font-size:clamp(1.7rem,3.6vw,2.7rem); font-weight:700; letter-spacing:-.02em; line-height:1.1;">Tu marca en el <span style="background:linear-gradient(120deg,#00AEEF,#33BEFF); -webkit-background-clip:text; background-clip:text; color:transparent;">bolsillo</span> de tus clientes</h2>
+        <p style="margin:0 0 16px; font-size:1rem; line-height:1.75; color:rgba(255,255,255,.6);">Una app te permite conectar con tus clientes de forma directa y constante. Notificaciones push, automatización y nuevos canales de venta generan ingresos incluso mientras dormís.</p>
+        <p style="margin:0 0 26px; font-size:1rem; line-height:1.75; color:rgba(255,255,255,.6);">Urbanbit se encarga de todo: diseño gráfico, programación, integración con sistemas externos y publicación en Google Play y App Store.</p>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; align-items:center; gap:12px; font-size:.94rem; color:rgba(255,255,255,.72);"><span style="width:26px; height:26px; border-radius:8px; background:rgba(0,174,239,.14); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:.7rem; flex-shrink:0;"><i class="fas fa-check"></i></span>Una sola app para iOS y Android (código compartido)</div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:.94rem; color:rgba(255,255,255,.72);"><span style="width:26px; height:26px; border-radius:8px; background:rgba(0,174,239,.14); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:.7rem; flex-shrink:0;"><i class="fas fa-check"></i></span>Publicación en Google Play y App Store incluida</div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:.94rem; color:rgba(255,255,255,.72);"><span style="width:26px; height:26px; border-radius:8px; background:rgba(0,174,239,.14); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:.7rem; flex-shrink:0;"><i class="fas fa-check"></i></span>Notificaciones push para engagement directo</div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:.94rem; color:rgba(255,255,255,.72);"><span style="width:26px; height:26px; border-radius:8px; background:rgba(0,174,239,.14); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:.7rem; flex-shrink:0;"><i class="fas fa-check"></i></span>Integración con sistemas y APIs externas</div>
         </div>
-        <div class="section-tag" style="margin-bottom:1rem;">Apps Móviles</div>
-        <h1>Aplicaciones móviles que <span class="gradient-text">hacen crecer</span> tu negocio</h1>
-        <p>Desarrollamos aplicaciones híbridas para iOS y Android con React Native e Ionic, y juegos 2D/3D con Unity. Gestión integral desde el wireframe hasta la publicación en los stores.</p>
-        <div class="hero-actions">
-          <a href="index.html#contacto" class="btn btn-primary btn-lg">
-            <i class="fas fa-paper-plane"></i> Solicitar presupuesto
-          </a>
-          <a href="#sub-servicios" class="btn btn-outline btn-lg">
-            <i class="fas fa-mobile-screen"></i> Ver servicios
-          </a>
+      </div>
+      <div data-reveal data-delay="120" style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+        <div style="background:#0F151C; border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:28px; text-align:center;"><i class="fab fa-google-play" style="font-size:30px; color:#33BEFF; display:block; margin-bottom:12px;"></i><div style="font-size:.85rem; color:rgba(255,255,255,.55);">Google Play</div></div>
+        <div style="background:#0F151C; border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:28px; text-align:center;"><i class="fab fa-app-store-ios" style="font-size:30px; color:#33BEFF; display:block; margin-bottom:12px;"></i><div style="font-size:.85rem; color:rgba(255,255,255,.55);">App Store</div></div>
+        <div style="background:#0F151C; border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:28px; text-align:center;"><i class="fab fa-react" style="font-size:30px; color:#61DAFB; display:block; margin-bottom:12px;"></i><div style="font-size:.85rem; color:rgba(255,255,255,.55);">React Native</div></div>
+        <div style="background:#0F151C; border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:28px; text-align:center;"><i class="fas fa-gamepad" style="font-size:30px; color:#33BEFF; display:block; margin-bottom:12px;"></i><div style="font-size:.85rem; color:rgba(255,255,255,.55);">Unity Games</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section style="position:relative; z-index:2; background:#0D1117; padding:clamp(70px,11vh,120px) clamp(18px,5vw,80px); border-top:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1150px; margin:0 auto;">
+      <div data-reveal style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); text-align:center; margin-bottom:clamp(38px,5vh,54px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; color:#33BEFF;">// CARACTERÍSTICAS</div>
+        <h2 style="margin:14px 0 0; font-size:clamp(1.9rem,4.2vw,3rem); font-weight:700; letter-spacing:-.02em;">Todo incluido en tu <span style="background:linear-gradient(120deg,#00AEEF,#33BEFF); -webkit-background-clip:text; background-clip:text; color:transparent;">aplicación</span></h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;">
+        <div data-reveal style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:28px; border-radius:16px; background:linear-gradient(180deg,#161C24,#12181F); border:1px solid rgba(255,255,255,.07);" style-hover="border-color:rgba(0,174,239,.5); transform:translateY(-4px);"><div style="width:48px; height:48px; border-radius:12px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:20px;"><i class="fas fa-pencil-ruler"></i></div><h3 style="margin:20px 0 10px; font-size:1.2rem; font-weight:600;">Diseño y Wireframes</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Diseñamos la experiencia de usuario completa antes de escribir código. Wireframes, mockups y prototipos.</p></div>
+        <div data-reveal data-delay="80" style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:28px; border-radius:16px; background:linear-gradient(180deg,#161C24,#12181F); border:1px solid rgba(255,255,255,.07);" style-hover="border-color:rgba(0,174,239,.5); transform:translateY(-4px);"><div style="width:48px; height:48px; border-radius:12px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:20px;"><i class="fas fa-code-branch"></i></div><h3 style="margin:20px 0 10px; font-size:1.2rem; font-weight:600;">Apps Nativas e Híbridas</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Desarrollamos apps nativas (Swift/Kotlin) o híbridas (React Native, Ionic) según tu proyecto.</p></div>
+        <div data-reveal data-delay="160" style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:28px; border-radius:16px; background:linear-gradient(180deg,#161C24,#12181F); border:1px solid rgba(255,255,255,.07);" style-hover="border-color:rgba(0,174,239,.5); transform:translateY(-4px);"><div style="width:48px; height:48px; border-radius:12px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:20px;"><i class="fas fa-bell"></i></div><h3 style="margin:20px 0 10px; font-size:1.2rem; font-weight:600;">Notificaciones Push</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Comunicación directa con tus usuarios con notificaciones que aumentan el engagement.</p></div>
+        <div data-reveal style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:28px; border-radius:16px; background:linear-gradient(180deg,#161C24,#12181F); border:1px solid rgba(255,255,255,.07);" style-hover="border-color:rgba(0,174,239,.5); transform:translateY(-4px);"><div style="width:48px; height:48px; border-radius:12px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:20px;"><i class="fas fa-plug"></i></div><h3 style="margin:20px 0 10px; font-size:1.2rem; font-weight:600;">Integración de APIs</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Conectamos tu app con sistemas externos: pasarelas de pago, ERPs, CRMs y geolocalización.</p></div>
+        <div data-reveal data-delay="80" style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:28px; border-radius:16px; background:linear-gradient(180deg,#161C24,#12181F); border:1px solid rgba(255,255,255,.07);" style-hover="border-color:rgba(0,174,239,.5); transform:translateY(-4px);"><div style="width:48px; height:48px; border-radius:12px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:20px;"><i class="fas fa-server"></i></div><h3 style="margin:20px 0 10px; font-size:1.2rem; font-weight:600;">Backend y Hosting</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Administración y mantenimiento del servidor backend, con monitoreo de disponibilidad incluido.</p></div>
+        <div data-reveal data-delay="160" style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:28px; border-radius:16px; background:linear-gradient(180deg,#161C24,#12181F); border:1px solid rgba(255,255,255,.07);" style-hover="border-color:rgba(0,174,239,.5); transform:translateY(-4px);"><div style="width:48px; height:48px; border-radius:12px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:20px;"><i class="fas fa-chart-bar"></i></div><h3 style="margin:20px 0 10px; font-size:1.2rem; font-weight:600;">Analytics Integrado</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Seguimiento del comportamiento de usuarios para tomar decisiones basadas en datos reales.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB-SERVICIOS -->
+  <section id="sub-servicios" style="position:relative; z-index:2; background:#0B0F14; padding:clamp(70px,11vh,120px) clamp(18px,5vw,80px); border-top:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1000px; margin:0 auto;">
+      <div data-reveal style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); text-align:center; margin-bottom:clamp(38px,5vh,54px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; color:#33BEFF;">// QUÉ DESARROLLAMOS</div>
+        <h2 style="margin:14px 0 0; font-size:clamp(1.9rem,4.2vw,3rem); font-weight:700; letter-spacing:-.02em;">Tipos de <span style="background:linear-gradient(120deg,#00AEEF,#33BEFF); -webkit-background-clip:text; background-clip:text; color:transparent;">aplicaciones</span></h2>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div data-reveal style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); display:flex; gap:24px; flex-wrap:wrap; padding:32px; border-radius:18px; background:linear-gradient(160deg,#161C24,#10161D); border:1px solid rgba(255,255,255,.08);">
+          <div style="width:60px; height:60px; border-radius:14px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:24px; flex-shrink:0;"><i class="fas fa-mobile-screen-button"></i></div>
+          <div style="flex:1; min-width:240px;"><h3 style="margin:0 0 10px; font-size:1.4rem; font-weight:600;">Aplicaciones Móviles (iOS &amp; Android)</h3><p style="margin:0 0 16px; font-size:.96rem; line-height:1.6; color:rgba(255,255,255,.58);">Apps híbridas con React Native e Ionic que funcionan en ambas plataformas con una sola base de código, reduciendo costos y tiempos.</p><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px;"><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Compatibilidad iOS y Android</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Acceso a cámara, GPS y sensores</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Login social (Google, Apple)</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Soporte offline y sincronización</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Publicación en los stores incluida</span></div></div>
+        </div>
+        <div data-reveal data-delay="100" style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); display:flex; gap:24px; flex-wrap:wrap; padding:32px; border-radius:18px; background:linear-gradient(160deg,#161C24,#10161D); border:1px solid rgba(255,255,255,.08);">
+          <div style="width:60px; height:60px; border-radius:14px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:24px; flex-shrink:0;"><i class="fas fa-store"></i></div>
+          <div style="flex:1; min-width:240px;"><h3 style="margin:0 0 10px; font-size:1.4rem; font-weight:600;">Apps de Negocio y E-commerce</h3><p style="margin:0 0 16px; font-size:.96rem; line-height:1.6; color:rgba(255,255,255,.58);">Fortalecemos tu marca con una app propia que abre nuevos canales de venta, automatiza procesos y fideliza clientes.</p><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px;"><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Catálogo de productos y carrito</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Pasarelas de pago integradas</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Programa de puntos y fidelización</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Gestión de pedidos en tiempo real</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Panel de administración web</span></div></div>
+        </div>
+        <div data-reveal data-delay="200" style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); display:flex; gap:24px; flex-wrap:wrap; padding:32px; border-radius:18px; background:linear-gradient(160deg,#161C24,#10161D); border:1px solid rgba(255,255,255,.08);">
+          <div style="width:60px; height:60px; border-radius:14px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.3); display:flex; align-items:center; justify-content:center; color:#33BEFF; font-size:24px; flex-shrink:0;"><i class="fas fa-gamepad"></i></div>
+          <div style="flex:1; min-width:240px;"><h3 style="margin:0 0 10px; font-size:1.4rem; font-weight:600;">Juegos y Apps Promocionales</h3><p style="margin:0 0 16px; font-size:.96rem; line-height:1.6; color:rgba(255,255,255,.58);">Experiencias interactivas con Unity para iOS, Android y web. Juegos 2D/3D, concursos y apps promocionales integradas con redes sociales.</p><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px;"><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Juegos 2D y 3D con Unity</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Integración con redes sociales</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Sistemas de puntos y rankings</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Realidad aumentada</span><span style="font-size:.88rem; color:rgba(255,255,255,.6);"><i class="fas fa-circle-dot" style="color:#00AEEF; font-size:.6rem; margin-right:8px;"></i>Multiplataforma: móvil y web</span></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== INTRO ===== -->
-  <section class="section-light">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="intro-grid">
-        <div data-aos="fade-right">
-          <span class="section-tag">¿Por qué una app?</span>
-          <h2 class="section-title" style="text-align:left;margin-bottom:1.25rem;">Tu marca en el <span class="accent">bolsillo</span> de tus clientes</h2>
-          <p style="color:var(--text-dark-2);line-height:1.8;margin-bottom:1.5rem;">
-            Una aplicación móvil te permite conectar con tus clientes de forma directa, personalizada y constante. Las notificaciones push, la automatización y los nuevos canales de venta generan ingresos incluso mientras dormís.
-          </p>
-          <p style="color:var(--text-dark-2);line-height:1.8;margin-bottom:2rem;">
-            Urbanbit se encarga de todo: diseño gráfico, programación, integración con sistemas externos, y publicación en Google Play y App Store.
-          </p>
-          <div style="display:flex;flex-direction:column;gap:0.9rem;">
-            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-dark-2);">
-              <div style="width:28px;height:28px;background:rgba(0,174,239,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-check" style="color:var(--primary);font-size:0.7rem;"></i></div>
-              Una sola app para iOS y Android (código compartido)
-            </div>
-            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-dark-2);">
-              <div style="width:28px;height:28px;background:rgba(0,174,239,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-check" style="color:var(--primary);font-size:0.7rem;"></i></div>
-              Publicación en Google Play y App Store incluida
-            </div>
-            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-dark-2);">
-              <div style="width:28px;height:28px;background:rgba(0,174,239,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-check" style="color:var(--primary);font-size:0.7rem;"></i></div>
-              Notificaciones push para engagement directo
-            </div>
-            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--text-dark-2);">
-              <div style="width:28px;height:28px;background:rgba(0,174,239,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-check" style="color:var(--primary);font-size:0.7rem;"></i></div>
-              Integración con sistemas y APIs externas
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-            <div style="background:var(--bg-dark-2);border:1px solid var(--border-dark);border-radius:16px;padding:1.75rem;text-align:center;">
-              <i class="fab fa-google-play" style="font-size:2rem;color:var(--primary);display:block;margin-bottom:0.75rem;"></i>
-              <div style="font-size:0.82rem;color:var(--text-muted);">Google Play</div>
-            </div>
-            <div style="background:var(--bg-dark-2);border:1px solid var(--border-dark);border-radius:16px;padding:1.75rem;text-align:center;">
-              <i class="fab fa-app-store-ios" style="font-size:2rem;color:var(--primary);display:block;margin-bottom:0.75rem;"></i>
-              <div style="font-size:0.82rem;color:var(--text-muted);">App Store</div>
-            </div>
-            <div style="background:var(--bg-dark-2);border:1px solid var(--border-dark);border-radius:16px;padding:1.75rem;text-align:center;">
-              <i class="fab fa-react" style="font-size:2rem;color:#61DAFB;display:block;margin-bottom:0.75rem;"></i>
-              <div style="font-size:0.82rem;color:var(--text-muted);">React Native</div>
-            </div>
-            <div style="background:var(--bg-dark-2);border:1px solid var(--border-dark);border-radius:16px;padding:1.75rem;text-align:center;">
-              <i class="fas fa-gamepad" style="font-size:2rem;color:var(--primary);display:block;margin-bottom:0.75rem;"></i>
-              <div style="font-size:0.82rem;color:var(--text-muted);">Unity Games</div>
-            </div>
-          </div>
+  <!-- PROCESO -->
+  <section style="position:relative; z-index:2; background:#12181F; padding:clamp(70px,11vh,120px) clamp(18px,5vw,80px); border-top:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1150px; margin:0 auto;">
+      <div data-reveal style="opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.2,.7,.2,1); text-align:center; margin-bottom:clamp(38px,5vh,54px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; color:#33BEFF;">// PROCESO</div>
+        <h2 style="margin:14px 0 0; font-size:clamp(1.9rem,4.2vw,3rem); font-weight:700; letter-spacing:-.02em;">De la idea al <span style="background:linear-gradient(120deg,#00AEEF,#33BEFF); -webkit-background-clip:text; background-clip:text; color:transparent;">store</span></h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;">
+        <div data-reveal style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:32px; border-radius:16px; background:#0F151C; border:1px solid rgba(255,255,255,.08); position:relative; overflow:hidden;"><div style="position:absolute; top:-20px; right:-2px; font-size:6rem; font-weight:700; color:rgba(0,174,239,.06); line-height:1;">01</div><div style="position:relative;"><div style="color:#33BEFF; font-size:24px;"><i class="fas fa-lightbulb"></i></div><h3 style="margin:16px 0 10px; font-size:1.25rem; font-weight:600;">Definición y Wireframes</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Analizamos tus objetivos, definimos funcionalidades, diseñamos wireframes y creamos el prototipo navegable.</p></div></div>
+        <div data-reveal data-delay="120" style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:32px; border-radius:16px; background:#0F151C; border:1px solid rgba(255,255,255,.08); position:relative; overflow:hidden;"><div style="position:absolute; top:-20px; right:-2px; font-size:6rem; font-weight:700; color:rgba(0,174,239,.06); line-height:1;">02</div><div style="position:relative;"><div style="color:#33BEFF; font-size:24px;"><i class="fas fa-code"></i></div><h3 style="margin:16px 0 10px; font-size:1.25rem; font-weight:600;">Desarrollo e Integración</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Programamos la app, integramos APIs y sistemas externos, y realizamos testing en dispositivos reales.</p></div></div>
+        <div data-reveal data-delay="240" style="opacity:0; transform:translateY(30px); transition:all .7s cubic-bezier(.2,.7,.2,1); padding:32px; border-radius:16px; background:#0F151C; border:1px solid rgba(255,255,255,.08); position:relative; overflow:hidden;"><div style="position:absolute; top:-20px; right:-2px; font-size:6rem; font-weight:700; color:rgba(0,174,239,.06); line-height:1;">03</div><div style="position:relative;"><div style="color:#33BEFF; font-size:24px;"><i class="fas fa-rocket"></i></div><h3 style="margin:16px 0 10px; font-size:1.25rem; font-weight:600;">Publicación y Soporte</h3><p style="margin:0; font-size:.93rem; line-height:1.6; color:rgba(255,255,255,.55);">Publicamos en Google Play y App Store, monitoreamos el rendimiento y brindamos soporte continuo.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH -->
+  <section style="position:relative; z-index:2; background:#0D1117; padding:clamp(60px,9vh,100px) clamp(18px,5vw,80px); border-top:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1000px; margin:0 auto; text-align:center;">
+      <div data-reveal style="opacity:0; transform:translateY(24px); transition:all .7s cubic-bezier(.2,.7,.2,1);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; color:#33BEFF;">// STACK</div>
+        <h2 style="margin:14px 0 32px; font-size:clamp(1.7rem,3.6vw,2.6rem); font-weight:700; letter-spacing:-.02em;">Tecnologías que <span style="background:linear-gradient(120deg,#00AEEF,#33BEFF); -webkit-background-clip:text; background-clip:text; color:transparent;">usamos</span></h2>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fab fa-react" style="color:#61DAFB;"></i> React Native</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fas fa-mobile-screen" style="color:#54C5F8;"></i> Flutter</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fas fa-bolt" style="color:#3880FF;"></i> Ionic</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fas fa-gamepad" style="color:#00AEEF;"></i> Unity</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fab fa-android" style="color:#3DDC84;"></i> Android (Kotlin)</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fab fa-apple" style="color:#ccc;"></i> iOS (Swift)</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fab fa-node-js" style="color:#339933;"></i> Node.js</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fas fa-database" style="color:#4479A1;"></i> MySQL</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fab fa-google-play" style="color:#34A853;"></i> Google Play</span>
+          <span style="display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:999px; background:#0F151C; border:1px solid rgba(255,255,255,.08); font-size:.9rem; color:rgba(255,255,255,.78);"><i class="fab fa-app-store-ios" style="color:#0D96F6;"></i> App Store</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FEATURES ===== -->
-  <section class="section-dark-2">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Características</span>
-        <h2 class="section-title">Todo incluido en tu <span class="gradient-text">aplicación</span></h2>
-        <p class="section-subtitle" style="color:var(--text-muted)">Desarrollamos apps completas con todo lo que tu negocio necesita para crecer.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card" data-aos="fade-up">
-          <div class="feature-icon"><i class="fas fa-pencil-ruler"></i></div>
-          <h3>Diseño y Wireframes</h3>
-          <p>Diseñamos la experiencia de usuario completa antes de escribir una línea de código. Wireframes, mockups y prototipos interactivos.</p>
-        </div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="80">
-          <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-          <h3>Apps Nativas e Híbridas</h3>
-          <p>Desarrollamos aplicaciones nativas (Swift/Kotlin) o híbridas (React Native, Ionic) según las necesidades y presupuesto de tu proyecto.</p>
-        </div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="160">
-          <div class="feature-icon"><i class="fas fa-bell"></i></div>
-          <h3>Notificaciones Push</h3>
-          <p>Comunicación directa con tus usuarios con notificaciones personalizadas que aumentan el engagement y las conversiones.</p>
-        </div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="80">
-          <div class="feature-icon"><i class="fas fa-plug"></i></div>
-          <h3>Integración de APIs</h3>
-          <p>Conectamos tu app con sistemas externos: pasarelas de pago, ERPs, CRMs, servicios de geolocalización y más.</p>
-        </div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="160">
-          <div class="feature-icon"><i class="fas fa-server"></i></div>
-          <h3>Backend y Hosting</h3>
-          <p>Administración y mantenimiento del servidor backend que alimenta tu aplicación, con monitoreo de disponibilidad incluido.</p>
-        </div>
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="240">
-          <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-          <h3>Analytics Integrado</h3>
-          <p>Seguimiento del comportamiento de usuarios dentro de la app para tomar decisiones basadas en datos reales.</p>
-        </div>
-      </div>
+  <!-- CTA -->
+  <section style="position:relative; z-index:2; padding:clamp(64px,10vh,110px) clamp(18px,5vw,80px); background:linear-gradient(135deg,#00AEEF,#0090C8); text-align:center; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px); background-size:40px 40px; opacity:.5; pointer-events:none;"></div>
+    <div data-reveal style="opacity:0; transform:translateY(24px); transition:all .7s cubic-bezier(.2,.7,.2,1); position:relative; max-width:720px; margin:0 auto;">
+      <h2 style="margin:0; font-size:clamp(1.8rem,4.4vw,3rem); font-weight:700; letter-spacing:-.02em; color:#04121a;">¿Tenés la idea de una app?</h2>
+      <p style="margin:16px auto 0; max-width:520px; font-size:clamp(1rem,1.6vw,1.12rem); color:rgba(4,18,26,.75);">Contanos tu concepto y te ayudamos a convertirlo en realidad. Respuesta en menos de 24 horas.</p>
+      <a href="index.html#contacto" style="display:inline-flex; align-items:center; gap:9px; margin-top:28px; padding:15px 34px; border-radius:999px; background:#0D1117; color:#fff; text-decoration:none; font-size:1rem; font-weight:600; box-shadow:0 12px 34px rgba(0,0,0,.25);" style-hover="background:#161C24;"><i class="fas fa-paper-plane"></i> Solicitar presupuesto gratis</a>
     </div>
   </section>
 
-  <!-- ===== SUB-SERVICIOS ===== -->
-  <section class="section-dark" id="sub-servicios">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Qué desarrollamos</span>
-        <h2 class="section-title">Tipos de <span class="gradient-text">aplicaciones</span></h2>
-        <p class="section-subtitle" style="color:var(--text-muted)">Soluciones digitales para cada necesidad de negocio.</p>
+  <!-- FOOTER -->
+  <footer style="position:relative; z-index:2; background:#0B0F14; padding:clamp(56px,8vh,80px) clamp(18px,5vw,80px) 34px; border-top:1px solid rgba(255,255,255,.07);">
+    <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:40px;">
+      <div style="max-width:340px;">
+        <img src="uploads/logo.png" alt="urbanbit" style="height:26px; width:auto; margin-bottom:18px;" />
+        <p style="margin:0 0 16px; font-size:.9rem; line-height:1.6; color:rgba(255,255,255,.5);">Hacemos tu empresa visible en internet. Web Design &amp; IT Solutions desde Uruguay para el mundo.</p>
+        <div style="font-size:.82rem; color:rgba(255,255,255,.45); line-height:1.8; margin-bottom:18px;"><strong style="color:rgba(255,255,255,.75);">urbanbit</strong> · Montevideo, Uruguay<br>099 57 66 83 · hello@urbanbit.net</div>
+        <div style="display:flex; gap:10px;">
+          <a href="https://www.facebook.com/urbanbit/" target="_blank" rel="noopener" aria-label="Facebook" style="width:38px; height:38px; border-radius:10px; background:#161C24; border:1px solid rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.7); text-decoration:none;" style-hover="color:#33BEFF;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/urbanbitnet/" target="_blank" rel="noopener" aria-label="Instagram" style="width:38px; height:38px; border-radius:10px; background:#161C24; border:1px solid rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.7); text-decoration:none;" style-hover="color:#33BEFF;"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/urbanbitnet" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:38px; height:38px; border-radius:10px; background:#161C24; border:1px solid rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.7); text-decoration:none;" style-hover="color:#33BEFF;"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
-      <div class="sub-services">
-        <div class="sub-service" data-aos="fade-up">
-          <div class="sub-service-icon"><i class="fas fa-mobile-screen-button"></i></div>
-          <div>
-            <h3>Aplicaciones Móviles (iOS & Android)</h3>
-            <p>Desarrollamos apps híbridas con React Native e Ionic que funcionan perfectamente en ambas plataformas con una sola base de código, reduciendo costos y tiempos de desarrollo significativamente.</p>
-            <ul class="sub-service-list">
-              <li><i class="fas fa-circle-dot"></i> Compatibilidad iOS y Android simultánea</li>
-              <li><i class="fas fa-circle-dot"></i> Acceso a cámara, GPS y sensores nativos</li>
-              <li><i class="fas fa-circle-dot"></i> Login social (Google, Facebook, Apple)</li>
-              <li><i class="fas fa-circle-dot"></i> Soporte offline y sincronización</li>
-              <li><i class="fas fa-circle-dot"></i> Publicación en los stores incluida</li>
-            </ul>
-          </div>
+      <div>
+        <h4 style="margin:0 0 16px; font-size:.95rem; color:#fff;">Servicios</h4>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <a href="desarrollo-web-responsive.html" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;">Diseño Web Responsive</a>
+          <a href="desarrollo-de-aplicaciones.html" style="color:#33BEFF; text-decoration:none; font-size:.9rem;">Desarrollo de Apps</a>
+          <a href="marketing-digital.html" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;">Marketing Digital</a>
         </div>
-
-        <div class="sub-service" data-aos="fade-up" data-aos-delay="100">
-          <div class="sub-service-icon"><i class="fas fa-store"></i></div>
-          <div>
-            <h3>Apps de Negocio y E-commerce</h3>
-            <p>Fortalecemos tu marca con una app propia que abre nuevos canales de venta, automatiza procesos de negocio y fideliza clientes a través de programas de lealtad y notificaciones personalizadas.</p>
-            <ul class="sub-service-list">
-              <li><i class="fas fa-circle-dot"></i> Catálogo de productos y carrito</li>
-              <li><i class="fas fa-circle-dot"></i> Pasarelas de pago integradas</li>
-              <li><i class="fas fa-circle-dot"></i> Programa de puntos y fidelización</li>
-              <li><i class="fas fa-circle-dot"></i> Gestión de pedidos en tiempo real</li>
-              <li><i class="fas fa-circle-dot"></i> Panel de administración web</li>
-            </ul>
-          </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 16px; font-size:.95rem; color:#fff;">Empresa</h4>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <a href="index.html#servicios" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;">¿Qué hacemos?</a>
+          <a href="index.html#metodologia" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;">Metodología</a>
+          <a href="index.html#portfolio" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;">Portfolio</a>
         </div>
-
-        <div class="sub-service" data-aos="fade-up" data-aos-delay="200">
-          <div class="sub-service-icon"><i class="fas fa-gamepad"></i></div>
-          <div>
-            <h3>Juegos y Apps Promocionales</h3>
-            <p>Creamos experiencias interactivas con Unity para iOS, Android y web. Juegos 2D/3D, concursos digitales y aplicaciones promocionales integradas con redes sociales para puntos de venta y campañas.</p>
-            <ul class="sub-service-list">
-              <li><i class="fas fa-circle-dot"></i> Juegos 2D y 3D con Unity</li>
-              <li><i class="fas fa-circle-dot"></i> Integración con redes sociales</li>
-              <li><i class="fas fa-circle-dot"></i> Sistemas de puntos y rankings</li>
-              <li><i class="fas fa-circle-dot"></i> Experiencias de realidad aumentada</li>
-              <li><i class="fas fa-circle-dot"></i> Multiplataforma: móvil y web</li>
-            </ul>
-          </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 16px; font-size:.95rem; color:#fff;">Contacto</h4>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <a href="mailto:hello@urbanbit.net" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;"><i class="fas fa-envelope" style="width:18px; color:#00AEEF;"></i> hello@urbanbit.net</a>
+          <a href="tel:+59899576683" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;"><i class="fas fa-phone" style="width:18px; color:#00AEEF;"></i> 099 57 66 83</a>
+          <a href="https://wa.me/59899576683" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5); text-decoration:none; font-size:.9rem;" style-hover="color:#33BEFF;"><i class="fab fa-whatsapp" style="width:18px; color:#00AEEF;"></i> WhatsApp</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ===== PROCESO ===== -->
-  <section class="section-dark-2">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Proceso</span>
-        <h2 class="section-title">De la idea al <span class="gradient-text">store</span></h2>
-        <p class="section-subtitle" style="color:var(--text-muted)">Un proceso claro y transparente para que siempre sepas en qué etapa está tu proyecto.</p>
-      </div>
-      <div class="methodology-grid">
-        <div class="method-step" data-aos="fade-up">
-          <div class="method-number">Paso 01</div>
-          <div class="method-icon"><i class="fas fa-lightbulb"></i></div>
-          <h3>Definición y Wireframes</h3>
-          <p>Analizamos tus objetivos, definimos las funcionalidades, diseñamos los wireframes y creamos el prototipo navegable.</p>
-        </div>
-        <div class="method-step" data-aos="fade-up" data-aos-delay="120">
-          <div class="method-number">Paso 02</div>
-          <div class="method-icon"><i class="fas fa-code"></i></div>
-          <h3>Desarrollo e Integración</h3>
-          <p>Programamos la aplicación, integramos APIs y sistemas externos, y realizamos testing exhaustivo en dispositivos reales.</p>
-        </div>
-        <div class="method-step" data-aos="fade-up" data-aos-delay="240">
-          <div class="method-number">Paso 03</div>
-          <div class="method-icon"><i class="fas fa-rocket"></i></div>
-          <h3>Publicación y Soporte</h3>
-          <p>Publicamos en Google Play y App Store, monitoreamos el rendimiento y brindamos soporte continuo post-lanzamiento.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TECNOLOGÍAS ===== -->
-  <section class="section-dark">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Stack</span>
-        <h2 class="section-title">Tecnologías que <span class="gradient-text">usamos</span></h2>
-      </div>
-      <div class="tech-badges" style="justify-content:center;" data-aos="fade-up">
-        <span class="tech-badge"><i class="fab fa-react" style="color:#61DAFB;"></i> React Native</span>
-        <span class="tech-badge"><i class="fas fa-mobile-screen" style="color:#54C5F8;"></i> Flutter</span>
-        <span class="tech-badge"><i class="fas fa-bolt" style="color:#3880FF;"></i> Ionic</span>
-        <span class="tech-badge"><i class="fas fa-gamepad" style="color:var(--primary);"></i> Unity</span>
-        <span class="tech-badge"><i class="fab fa-android" style="color:#3DDC84;"></i> Android (Kotlin)</span>
-        <span class="tech-badge"><i class="fab fa-apple" style="color:#aaa;"></i> iOS (Swift)</span>
-        <span class="tech-badge"><i class="fab fa-node-js" style="color:#339933;"></i> Node.js</span>
-        <span class="tech-badge"><i class="fas fa-database" style="color:#4479A1;"></i> MySQL</span>
-        <span class="tech-badge"><i class="fab fa-google-play" style="color:#34A853;"></i> Google Play</span>
-        <span class="tech-badge"><i class="fab fa-app-store-ios" style="color:#0D96F6;"></i> App Store</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA BANNER ===== -->
-  <section class="cta-banner">
-    <div class="container">
-      <h2 data-aos="fade-up">¿Tenés la idea de una app?</h2>
-      <p data-aos="fade-up" data-aos-delay="80">Contanos tu concepto y te ayudamos a convertirlo en realidad. Respuesta en menos de 24 horas.</p>
-      <a href="index.html#contacto" class="btn btn-white btn-lg" data-aos="fade-up" data-aos-delay="160">
-        <i class="fas fa-paper-plane"></i> Solicitar presupuesto gratis
-      </a>
-    </div>
-  </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <img src="logo.png" alt="urbanbit" class="nav-logo-img" style="height:32px;">
-          </a>
-          <p>Hacemos tu empresa visible en internet. Web Design &amp; IT Solutions desde Uruguay para el mundo.</p>
-          <address style="font-style:normal;font-size:0.8rem;color:var(--text-muted);margin-bottom:1.25rem;line-height:1.8;">
-            <strong style="color:var(--text-light);">urbanbit</strong> · Montevideo, Uruguay<br>
-            <a href="tel:+59899576683" style="color:var(--text-muted);">099 57 66 83</a> ·
-            <a href="mailto:hello@urbanbit.net" style="color:var(--text-muted);">hello@urbanbit.net</a>
-          </address>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/urbanbit/" target="_blank" rel="noopener" class="social-link" aria-label="Seguinos en Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/urbanbitnet/" target="_blank" rel="noopener" class="social-link" aria-label="Seguinos en Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/urbanbitnet" target="_blank" rel="noopener" class="social-link" aria-label="Seguinos en LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Servicios</h4>
-          <ul>
-            <li><a href="desarrollo-web-responsive.html">Diseño Web Responsive</a></li>
-            <li><a href="desarrollo-de-aplicaciones.html">Desarrollo de Apps</a></li>
-            <li><a href="marketing-digital.html">Marketing Digital</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a href="index.html#servicios">¿Qué hacemos?</a></li>
-            <li><a href="index.html#metodologia">Metodología</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="mailto:hello@urbanbit.net"><i class="fas fa-envelope" style="width:16px;color:var(--primary);"></i> hello@urbanbit.net</a></li>
-            <li><a href="tel:+59899576683"><i class="fas fa-phone" style="width:16px;color:var(--primary);"></i> 099 57 66 83</a></li>
-            <li><a href="https://wa.me/59899576683" target="_blank" rel="noopener"><i class="fab fa-whatsapp" style="width:16px;color:var(--primary);"></i> WhatsApp</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 <a href="index.html">urbanbit</a>. Todos los derechos reservados.</p>
-        <p>Hecho con <i class="fas fa-heart" style="color:var(--primary);font-size:0.75rem;"></i> en Uruguay</p>
-      </div>
+    <div style="max-width:1200px; margin:36px auto 0; padding-top:24px; border-top:1px solid rgba(255,255,255,.07); display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-size:.82rem; color:rgba(255,255,255,.4);">
+      <span>© 2026 urbanbit. Todos los derechos reservados.</span>
+      <span>Hecho con <i class="fas fa-heart" style="color:#00AEEF; font-size:.72rem;"></i> en Uruguay</span>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const root = this.root;
+    if (!root) return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const d = parseFloat(el.getAttribute('data-delay') || 0);
+          el.style.transitionDelay = d + 'ms';
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.14 });
+    root.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+
+    const burger = root.querySelector('[data-role="burger"]');
+    const menu = root.querySelector('[data-role="mobilemenu"]');
+    const setVis = () => {
+      const mobile = window.innerWidth < 900;
+      root.querySelectorAll('[data-navlink]').forEach((a) => { a.style.display = mobile ? 'none' : ''; });
+      if (burger) burger.style.display = mobile ? 'block' : 'none';
+      if (!mobile && menu) menu.style.display = 'none';
+    };
+    setVis();
+    window.addEventListener('resize', setVis);
+    if (burger && menu) {
+      burger.addEventListener('click', () => { menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex'; });
+      menu.querySelectorAll('[data-mlink]').forEach((a) => a.addEventListener('click', () => { menu.style.display = 'none'; }));
+    }
+
+    const bar = root.querySelector('[data-role="topbar"]');
+    const updateBar = () => {
+      if (!bar) return;
+      const sc = window.scrollY || document.documentElement.scrollTop || 0;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = `scaleX(${max > 0 ? sc / max : 0})`;
+    };
+    const loop = () => { updateBar(); this.raf = requestAnimationFrame(loop); };
+    loop();
+    this._cleanup = () => { cancelAnimationFrame(this.raf); io.disconnect(); window.removeEventListener('resize', setVis); };
+  }
+  componentWillUnmount() { this._cleanup && this._cleanup(); }
+  renderVals() { return { rootRef: (el) => { this.root = el; } }; }
+}
+</script>
 </body>
 </html>
